@@ -22,15 +22,31 @@ which is inspired by [alwaysontop](https://github.com/swirepe/alwaysontop) plugi
 
 ## Installation
 
+Suggestion: Use [fisher](https://github.com/jorgebucaran/fisher) which is a very clean and easy way to manage plugins.
+
 ```
 fisher add veggiemonk/almostontop-fish
 ```
+
+Or install it manually
+
+```
+curl https://raw.githubusercontent.com/veggiemonk/almostontop-fish/master/conf.d/almostontop.fish --create-dirs -sLo ~/.config/fish/conf.d/almostontop.fish
+```
+
+## Usage
+
+The plugin is automatically load as it is located in `~/.config/fish/conf.d/` 
+
+### Deactivate
 
 To deactivate the plugin in the current session, remove the function:
 
 ```
 functions -e almostontop
 ```
+
+### Reactivate
 
 To reactivate the plugin, open a new shell or `source` the code :
 
